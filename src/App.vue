@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <LineChart msg="Welcome to Your Vue.js App"/>
+    <LineChart msg="lineChart"/>
   </div>
 </template>
 
