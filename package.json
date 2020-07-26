@@ -2,15 +2,15 @@
   "name": "assignment-ui",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://dharmveer.github.io/assignment-ui/",
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
-    "deploy": "git subtree push --prefix dist origin gh-pages",
-    "lint": "vue-cli-service lint"
+    "lint": "vue-cli-service lint",
+    "deploy": "git subtree push --prefix dist origin gh-pages"
   },
   "dependencies": {
     "core-js": "^3.6.5",
+    "register-service-worker": "^1.7.1",
     "vue": "^2.6.11",
     "vue-google-charts": "^0.3.3",
     "vuex": "^3.5.1"
@@ -18,6 +18,7 @@
   "devDependencies": {
     "@vue/cli-plugin-babel": "^4.4.0",
     "@vue/cli-plugin-eslint": "^4.4.0",
+    "@vue/cli-plugin-pwa": "^4.4.6",
     "@vue/cli-service": "^4.4.0",
     "babel-eslint": "^10.1.0",
     "eslint": "^6.7.2",
@@ -42,5 +43,6 @@
     "> 1%",
     "last 2 versions",
     "not dead"
-  ]
+  ],
+  "homepage": "https://dharmveer.github.io/assignment-ui/"
 }
