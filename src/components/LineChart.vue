@@ -1,8 +1,15 @@
 <template>
   <div class="hello">
     <select :v-model="selected" @change="onChange($event)">
-      <option v-for="listoption in listoptions" v-bind:key="listoption">{{ listoption }}</option>
+      <option v-for="(listoption) in listoptions" v-bind:key="listoption">{{ listoption }}</option>
     </select>
+
+    <label>
+      Select
+      <select :v-model="selected" @change="onChange($event)" name="listoption">
+      <option v-for="(listoption) in listoptions" v-bind:key="listoption">{{ listoption }}</option>
+    </select>
+    </label>
     <GChart type="LineChart" :data="chartData" :options="chartOptions" />
   </div>
 </template>
