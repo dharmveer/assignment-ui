@@ -1,11 +1,7 @@
 <template>
   <div class="hello">
-    <select :v-model="selected" @change="onChange($event)">
-      <option v-for="(listoption) in listoptions" v-bind:key="listoption">{{ listoption }}</option>
-    </select>
-
     <label>
-      Select
+      Select: 
       <select :v-model="selected" @change="onChange($event)" name="listoption">
       <option v-for="(listoption) in listoptions" v-bind:key="listoption">{{ listoption }}</option>
     </select>
